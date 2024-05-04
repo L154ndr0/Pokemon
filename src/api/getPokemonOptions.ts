@@ -29,9 +29,7 @@ const pokemonName = async(pokemons: number[]): Promise<Pokemon[]> =>{
 
 const getPokemonOptions =async ()=>{
     const mixedPokemons = getPokemons().sort(()=> Math.random() - 0.5)
-    console.log(mixedPokemons)
     const pokemons = await pokemonName(mixedPokemons.slice(0,4))
-    console.log(pokemons)
     return pokemons
 }
 
