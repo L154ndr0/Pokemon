@@ -8,8 +8,9 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineConfig({
   plugins: [
     vue(),
-    vueJsx(),
+    vueJsx(),   
   ],
+  base:'/pokemon/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
