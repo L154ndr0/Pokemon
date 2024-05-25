@@ -66,7 +66,7 @@ mixPokemonArray()
 
     </div>
 
-    <PokemonOptions :show-pokemon="showPokemon" :show-answer="showAnswer" @selection-pokemon="checkAnswer" :pokemons="pokemonArr" />
+    <PokemonOptions :pokemon1="pokemon" :show-pokemon="showPokemon" :show-answer="showAnswer" @selection-pokemon="checkAnswer" :pokemons="pokemonArr" />
   </div>
   <div v-if="showAnswer" class="flex flex-col text-center space-y-6">
       <p class="text-2xl font-bold">{{ message }}</p>
